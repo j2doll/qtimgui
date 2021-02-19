@@ -1,8 +1,16 @@
-QT       += core gui widgets
+
 TARGET = demo-widget
+
 TEMPLATE = app
+
+QT += core gui widgets
 
 include(../qtimgui.pri)
 
+HEADERS += \
+ MainWindow.h
+
 SOURCES += \
-    demo-widget.cpp
+ MainWindow.cpp \
+ main.cpp
+

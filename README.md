@@ -46,3 +46,13 @@ When using cmake under Android, this project will uses [qt-android-cmake](https:
 *In order to successfuly deploy the app to a device, the cmake variable ANDROID_NATIVE_API_LEVEL should elevated to 21 or 26 (depending on the native levels installed in your android sdk)
  You will need to set it via the cmake command line, or inside Qt Creator (in the project view).*
 
+## Getting code from github
+
+```
+git clone --recurse-submodules https://github.com/j2doll/qtimgui.git
+```
+
+## Tested Environment
+
+- Qt 6.0.1 / MingW 8.1 / Windows 10
+
