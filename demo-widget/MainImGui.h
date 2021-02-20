@@ -1,5 +1,6 @@
 // MainImGui.h
 
+// boiler-plate code {{
 #ifndef MainImGui_h
 #define MainImGui_h
 
@@ -12,15 +13,15 @@ class MainImGui
 public:
     MainImGui(ImVec4 clearColor = ImColor(114, 144, 154));
     virtual ~MainImGui();
-
     void renderImGui();
-
 protected:
     ImVec4 clear_color;
+// boiler-plate code }}
 
     bool show_test_window;
     bool show_another_window;
 
+// boiler-plate code {{
 };
-
 #endif
+// boiler-plate code }}
