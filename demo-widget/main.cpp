@@ -1,5 +1,6 @@
 // boiler-plate code {{
 
+#include <QtGlobal>
 #include <QApplication>
 #include <QTimer>
 

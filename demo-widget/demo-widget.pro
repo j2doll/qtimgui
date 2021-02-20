@@ -8,9 +8,12 @@ QT += core gui widgets
 include(../qtimgui.pri)
 
 HEADERS += \
- MainWindow.h
+ MainWindow.h \
+ MainImGui.h
 
 SOURCES += \
  MainWindow.cpp \
- main.cpp
+ main.cpp \
+ MainImGui.cpp
+
 
