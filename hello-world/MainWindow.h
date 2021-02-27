@@ -8,6 +8,7 @@
 #include <QTimer>
 
 #include <QOpenGLWidget>
+#include <QOpenGLWindow>
 #include <QOpenGLExtraFunctions>
 #include <QSurfaceFormat>
 
@@ -16,7 +17,15 @@
 
 #include "MainImGui.h"
 
-class MainWindow : public QOpenGLWidget, protected QOpenGLExtraFunctions
+#define USE_OPEN_GL_WINDOW
+
+class MainWindow
+#ifdef USE_OPEN_GL_WINDOW
+        : public QOpenGLWindow,
+#else
+        : public QOpenGLWidget,
+#endif
+        protected QOpenGLExtraFunctions
 {
 public:
     virtual ~MainWindow();

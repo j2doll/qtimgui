@@ -2,7 +2,11 @@
 # qtimgui.pri
 ###############
 
-QT += core gui widgets openglwidgets
+QT += core
+QT += gui
+QT += widgets
+QT += openglwidgets
+QT += opengl
 
 message('Print Working Directory')
 message($$PWD)

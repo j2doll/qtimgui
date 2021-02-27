@@ -15,9 +15,14 @@ void MainWindow::initializeGL()
 {
     // TODO: define your configuration
     QString strWindowTitle = ""; // "QtImGui widget example";
-    clear_color = ImColor(114, 144, 154);
+    clear_color = ImColor(114, 144, 154); // background color
 
+#ifdef USE_OPEN_GL_WINDOW
+    setTitle(strWindowTitle);
+#else
     setWindowTitle(strWindowTitle);
+#endif
+
     mainImGui = new MainImGui(clear_color);
 
     initializeOpenGLFunctions();
@@ -40,7 +45,10 @@ void MainWindow::paintGL()
 
 void MainWindow::renderImGui()
 {
-    mainImGui->renderImGui();
+    if ( mainImGui != nullptr )
+    {
+        mainImGui->renderImGui();
+    }
 }
 
 
