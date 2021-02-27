@@ -6,6 +6,10 @@
 
 // NOTE: For portability, use only standard C++ code or OpenGL code.
 
+#include <string>
+
+using namespace std;
+
 #include <imgui.h>
 
 class MainImGui
